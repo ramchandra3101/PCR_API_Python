@@ -3,7 +3,7 @@ import time
 
 #from helper_functions import call_csharp_method
 import clr
-clr.AddReference("D:/PCR_Station/PCR_API_code/Source/Example_Application/bin/Release/BioRad.Example_Client_Wrapper.dll")
+clr.AddReference("C:/BioRobot/PCR_station-main/PCR_API_code/Source/Example_Application/bin/Release/BioRad.Example_Client_Wrapper.dll")
 
 from BioRad.Example_Client_Wrapper import CFXManagerClientWrapper
 client_wrapper=CFXManagerClientWrapper()
@@ -12,7 +12,7 @@ client_wrapper=CFXManagerClientWrapper()
 def get_instrument_status(client_wrapper, max_retries=5, delay=2):
     for attempt in range(max_retries):
         try:
-            status_list=client_wrapper.GetInstrumentStatus()
+            status_list=CFXManagerClientWrapper.GetInstrumentStatus()
             
 
             if status_list is not None and len(status_list) > 0:

@@ -3,8 +3,8 @@ import inspect
 import clr
 import time
 # PCR_dll=cdll.LoadLibrary("D:/PCR_Station/PCR_API_code/Source/Example_Application/bin/Release/BioRad.Example_Client_Wrapper.dll")
-clr.AddReference("D:/PCR_Station/PCR_API_code/Source/Example_Application/bin/Release/BioRad.Example_Client_Wrapper.dll")
-
+#clr.AddReference("D:/PCR_Station/PCR_API_code/Source/Example_Application/bin/Release/BioRad.Example_Client_Wrapper.dll")
+clr.AddReference("C:/BioRobot/PCR_station-main/PCR_API_code/Source/Example_Application/bin/Release/BioRad.Example_Client_Wrapper.dll")
 from BioRad.Example_Client_Wrapper import CFXManagerUtilities
 
 def start_CFX_manager():
