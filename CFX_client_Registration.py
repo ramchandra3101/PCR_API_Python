@@ -18,7 +18,7 @@ def open_client():
                 print("Client opened successfully.")
                 #for message in client_wrapper.LogMessages:
                     #print(f"C# Log:{message}")
-                return True
+                return client_wrapper
             else:
                 print("Failed to open client.")
                 #for message in client_wrapper.LogMessages:
@@ -38,7 +38,7 @@ def close_client(client_wrapper):
             client_wrapper.CloseClient()
             #for message in client_wrapper.LogMessages:
                     #print(f"C# Log: {message}")
-            print(f"C# Log: {message}")
+            #print(f"C# Log: {message}")
             stop_CFX_manager()
             print("Client closed successfully.")
             
