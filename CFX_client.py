@@ -66,6 +66,7 @@ def is_connected():
         print(f"Error checking connection: {str(e)}")
         return False
     
+    
 def SendRequest(request: str):
     try:
         if not is_connected():

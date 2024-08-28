@@ -1,4 +1,6 @@
 import System
+import tkinter as tk
+from tkinter import filedialog
 def call_csharp_method(obj, method_name, *args):
     try:
         # Get the Type of the object
@@ -24,3 +26,13 @@ def call_csharp_method(obj, method_name, *args):
     except Exception as e:
         print(f"Error calling C# method '{method_name}': {str(e)}")
         return None  
+
+def select_file():
+    root=tk.Tk()
+    root.withdraw()
+    file_path=filedialog.askopenfilename(
+        title="Select a file",
+        filetypes=[("protocol files","*.prcl"),("plate files","*.pltd"), ("All files","*.*")]
+    )
+    return file_path
+

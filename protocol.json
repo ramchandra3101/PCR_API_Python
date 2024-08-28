@@ -1,0 +1,26 @@
+{
+    "steps": [
+      {
+        "temperature": 100,
+        "time": 30
+      },
+      {
+        "temperature": 150,
+        "time": 45
+      },     
+      {
+        "temperature": 200,
+        "time": 60
+      }
+    ],
+    "cycles": [
+      {
+        "stepIndex": 0,
+        "numberOfCycles": 3
+      },
+      {
+        "stepIndex": 2,
+        "numberOfCycles": 2
+      }
+    ]
+  }
